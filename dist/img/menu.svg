@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu">
+            <rect id="Rectangle" stroke-opacity="0.292261096" stroke="#888888" x="0.5" y="0.5" width="38" height="38" rx="8"></rect>
+            <path d="M9.39285714,12 L30.6652643,12" id="Line" stroke="#009A7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+            <path d="M9.39285714,20 L30.6652643,20" id="Line-Copy" stroke="#009A7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+            <path d="M9.39285714,28 L30.6652643,28" id="Line-Copy-2" stroke="#009A7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+        </g>
+    </g>
+</svg>

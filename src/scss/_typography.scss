@@ -1,0 +1,39 @@
+/* Font Import and Variable declarations */
+@import url('https://fonts.googleapis.com/css?family=Dosis:700|Open+Sans:300,700');
+$primary-font     : 'Dosis', Arial, sans-serif;
+$secondary-font   : "Open Sans", Verdana, sans-serif;
+
+h1, h2, h3 {
+	font-family: $primary-font;
+	font-weight: 700;
+}
+
+h4, p, i, label, input, a {
+	font-family: $secondary-font;
+	font-weight: 300;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size     : 48px;
+	line-height   : 1.5;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #c4d7d3;
+}

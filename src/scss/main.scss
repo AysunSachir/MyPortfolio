@@ -1,0 +1,561 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "typography";
+@import "colorpalette";
+@import "owl_css/owl.carousel";
+@import "owl_css/owl.theme.default";
+
+// BOOTSTRAP CLASSES OVERRIDE ----------------------------------
+
+.navbar-toggler-icon {
+    color: $white;
+}
+
+.navbar button:focus {
+    border: none;
+    outline: 0;
+}
+
+#mybtn {
+  color: white;
+  font-family: $secondary-font;
+  font-weight: 700;
+}
+
+.btn-primary, #mybtn {
+    padding              : 17px 50px;
+    background           : $secondary-color;
+    background-image     : -webkit-linear-gradient(left, $secondary-color, $third-color); /* For Chrome and Safari */
+    background-image     :    -moz-linear-gradient(left, $secondary-color, $third-color); /* For old Fx (3.6 to 15) */
+    background-image     :     -ms-linear-gradient(left, $secondary-color, $third-color); /* For pre-releases of IE 10*/
+    background-image     :      -o-linear-gradient(left, $secondary-color, $third-color); /* For old Opera (11.1 to 12.0) */
+    background-image     :         linear-gradient(to right, $secondary-color, $third-color); /* Standard syntax; must be last */
+    -webkit-border-radius: 8;
+    -moz-border-radius   : 8;
+    border-radius        : 8px;
+    border               : none;
+    font-weight          : 700;
+   
+}
+
+.btn-primary:hover, #mybtn:hover {
+    background           : $secondary-color;
+    cursor: pointer;
+    
+}
+// GLOBAL FIRSTS ----------------------------------
+
+body {
+    background: #000000;
+    color: $white;
+}
+
+// HERO TOP SECTION ----------------------------------
+.navbar {
+    padding-top: 31px;
+}
+
+.navbar li a, {
+    color: $white;
+    font-family: $primary-font;
+    text-transform: uppercase;
+    font-size: 18px;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.nav-social {
+    padding-top: 5px;
+}   
+.nav-item {
+    padding-left: 24px;
+}
+
+svg:hover #fb {
+    fill: #3D5999;
+}
+
+svg:hover #twitter {
+    fill: #2BA1F2;
+}
+
+svg:hover #pinterest {
+    fill: #BB061C;
+}
+
+
+#hero {
+    background: url('../img/bg-hero.jpg') no-repeat center;
+    background-size: cover;
+    background-position: 0 40%;
+    min-height: 1100px;
+}
+
+#hero-work {
+    background: url('../img/bg-hero-subpage.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 40%;
+    min-height: 200px;
+}
+
+#hero h1, h4 {
+    color: $white;
+}
+
+.hero-content {
+    margin-top: 25%;
+}
+
+.hero-content h1 {
+    line-height: 1.2;
+}
+
+.hero-content h4, button {
+    margin-top: 2%;
+}
+
+// ABOUT ME SECTION ----------------------------------
+.about-me {
+    color: $white;
+    margin-top: -60px;
+}
+
+.about-me h2 {
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+.about-me p {
+    max-width: 80%;
+    margin: 0 auto;
+    color: $text-color;
+}
+
+// MY SERVICES SECTION ----------------------------------
+.my-services h3, p{
+    color: $white;
+    padding-top: 8px;
+}
+
+.my-services object {
+    padding-bottom: 20px;
+}
+
+.my-services {
+    padding-top: 10%;
+    @include linearGradientBG;
+}
+
+.my-services .row {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-bottom: 10%;
+}
+
+// RECENT WORK SECTION ----------------------------------
+.recent-work {
+    background: #12353e;
+    padding: 2% 0 0 0;
+}
+
+.recent-work a {
+    color: $secondary-color;
+    font-weight: 700;
+
+    &:hover {
+        text-decoration: none;
+        color: $primary-color;
+    }
+}
+
+.recent-work h2 {
+    border-top: 1px solid rgba(36, 66, 55, 0.93);
+    padding-top: 3%;
+}
+.recent-img {
+    padding-top: 2%;
+}
+// ASCEND SECTION ----------------------------------
+.ascend {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.ascend h2 {
+  padding: 0 8px;
+}
+
+.ascend-h2 {
+  color: $secondary-color;
+  padding-top: 28px;
+  max-width: 480px;
+  margin: 0 auto;
+  display: inline;
+}
+
+
+
+// TESTIMONIALS SECTION ----------------------------------
+.testimonials {
+    background: url('../img/testimonial-bg.jpg') no-repeat center;
+    min-height: 370px;
+}
+
+.testimonials-entry {
+    padding-top: 3%;
+}
+.testimonials-text {
+    max-width: 50%;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+
+.testimonials-author {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 8px 0 0 0;
+}
+
+.testimonials a {
+  color: $white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+// CONTACT SECTION ----------------------------------
+.contact {
+    @include linearGradientBG;
+    padding-bottom: 5%;
+}
+
+.contact h2 {
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.contact form {
+    padding-top: 5%;
+}
+
+.contact input, .contact textarea {
+    background: #000;
+    border: 1px solid #313131;
+    padding: 16px;
+    color: #7d7d7d;
+
+    &:focus {
+        background: #000;
+        border: 1px solid $secondary-color;
+        color: #7d7d7d;
+    }
+
+    &::placeholder {
+        color: #7d7d7d;
+    }
+}
+
+.contact a {
+  font-weight: 700;
+  font-family: $secondary-font;
+}
+// FOOTER SECTION ----------------------------------
+footer {
+    background: $white;
+}
+
+footer p, footer li, footer a {
+    color: #7d7d7d;
+    font-size: 12px;
+}
+
+footer ul {
+    list-style: none;
+    padding-top: 16px;
+   
+}
+
+footer a {
+    padding-left: 16px;
+
+    &:hover {
+        color: $secondary-color;
+        text-decoration: none;
+    }
+}
+
+footer p {
+    padding-top: 20px;
+}
+// WORK SUBPAGE SECTION ----------------------------------
+.grid-item {
+  padding-top: 30px;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.grid-item a:hover {
+  background: red;
+}
+
+.work-portfolio h2, .terms h2 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $secondary-color;
+}
+
+#filters {
+  padding-top: 6%;
+}
+
+
+
+.button {
+  background-color: $secondary-color;
+  padding: 8px 15px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 8px 8px 0px 0px;
+
+  &:hover {
+    background-color: $third-color;
+    cursor: pointer;
+    cursor: hand;
+  }
+}
+
+.is-checked {
+  background-color: $third-color;
+}
+
+.terms h3 {
+  padding-top: 20px;
+}
+
+.g-recaptcha {
+  padding: 20px 0;
+}
+// IMPORT MOBILE SECTION ----------------------------------
+@import "mobile";
+
+
+
+// LIGHTBOX SECTION ----------------------------------
+/* Preload img */
+body:after {
+  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+  display: none;
+}
+
+body.lb-disable-scrolling {
+  overflow: hidden;
+}
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+}
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+
+  /* Image border */
+  border: 4px solid white;
+}
+
+.lightbox a img {
+  border: none;
+}
+
+.lb-outerContainer {
+  position: relative;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+
+  /* Background color behind image.
+     This is visible during transitions. */
+  background-color: white;
+}
+
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../img/loading.gif) no-repeat;
+}
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.lb-container > .nav {
+  left: 0;
+}
+
+.lb-nav a {
+  outline: none;
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  background: url(../img/prev.png) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: url(../img/next.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-data {
+  padding: 0 4px;
+  color: #ccc;
+}
+
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.lb-data .lb-caption a {
+  color: #4ae;
+}
+
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../img/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+

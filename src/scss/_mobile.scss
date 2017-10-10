@@ -1,0 +1,76 @@
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------- Homepage Mobile ------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+// HERO TOP SECTION ----------------------------------
+@media (max-width: 1199px) {
+	.hero-content {
+	    margin-top: 35%;
+	}
+ }
+
+@media (max-width: 991px) {
+ 	.ascend-h2 {
+ 		padding-top: 10px;
+ 	}
+
+ 	.ascend p {
+ 		max-width: 70%;
+ 		margin: 0 auto;
+ 	}
+
+ 	.footer-links, .footer-social, footer ul {
+ 		padding: 0;
+ 	}
+
+ 	.testimonials {
+ 		padding: 24px 0px;
+ 	}
+
+ }
+
+@media (max-width: 767px) { 
+	.hero-content {
+		margin-top: 55%;
+	}
+
+	.hero-content h1 {
+	    line-height: 1.3;
+	}
+
+	.hero-content h4, button {
+	    margin-top: 4%;
+	    line-height: 1.5;
+	}
+
+	.my-services .col-md-4 {
+		padding: 35px 0px;
+	}
+
+	.ascend {
+		padding: 10% 0;
+		margin: 0 auto;
+	}
+
+	.about-me {
+	    
+	    margin-top: -20px;
+	}
+
+	.navbar-collapse ul li {
+		padding: 8px;
+	}
+	
+
+}
+
+
+@media (max-width: 575px) { 
+	#hero {
+		min-height: 880px;
+	}
+
+	.testimonials-text {
+		max-width: 90%;
+	}
+ }
